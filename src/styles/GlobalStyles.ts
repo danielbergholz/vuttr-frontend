@@ -13,10 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
 
-  html, body, #root {
-    height:100%;
-  }
-
   body{
     -webkit-font-smoothing: antialiased !important;
     transition: background-color 300ms;
@@ -52,6 +48,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    font-family: 'Source Sans Pro', Helvetica, Arial;
     text-decoration:none;
     color: #170C3A;
   }
