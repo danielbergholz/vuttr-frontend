@@ -1,6 +1,6 @@
 # VUTTR - Frontend
 
-This is the codebase for the frontend of VUTTR (Very Useful Tools to Remember), a coding challenge provided by [Bossabox](https://bossabox.com/).
+This is the codebase for the frontend of VUTTR (Very Useful Tools to Remember), a coding challenge provided by [Bossabox](https://app.bossabox.com/u/daniel-bergholz).
 
 ## Technologies used
 - React
@@ -18,7 +18,7 @@ yarn
 ```bash
 yarn start
 ```
-  
+
 - Create production build:
 ```bash
 yarn build
