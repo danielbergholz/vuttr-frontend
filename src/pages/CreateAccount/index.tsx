@@ -49,7 +49,7 @@ const CreateAccount: React.FC = () => {
           setLoading(0);
         });
     },
-    [toast],
+    [toast, history],
   );
 
   return (
