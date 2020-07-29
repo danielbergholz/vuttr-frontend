@@ -53,10 +53,6 @@ export const GlobalStyle = createGlobalStyle`
     color: #170C3A;
   }
 
-  svg {
-    color: #170C3A;
-  }
-
   p {
     color: #170C3A;
   }

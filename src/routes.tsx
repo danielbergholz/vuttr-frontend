@@ -14,7 +14,7 @@ const Routes: React.FC = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/login" component={Login} />
-        <Route path="/createaccount" exact component={CreateAccount} />
+        <Route path="/createaccount" component={CreateAccount} />
       </Switch>
     </BrowserRouter>
   );
