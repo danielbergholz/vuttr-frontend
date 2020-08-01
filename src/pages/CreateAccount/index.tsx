@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import { useToast } from '../../context/toast';
-import { useUser } from '../../context/user';
 import api from '../../services/api';
 import LoginButton from '../../components/LoginButton';
 import back from '../../assets/back.svg';
@@ -13,7 +12,6 @@ const CreateAccount: React.FC = () => {
 
   const history = useHistory();
   const { toast } = useToast();
-  const { setUser } = useUser();
 
   const onHandleSubmit = useCallback(
     (event) => {
@@ -38,13 +36,8 @@ const CreateAccount: React.FC = () => {
           email: inputs[1].value,
           password: inputs[2].value,
         })
-        .then((response) => {
+        .then(() => {
           toast('User created, please login with your new account', 'success');
-          setUser({
-            id: response.data.id,
-            email: inputs[1].value,
-            name: inputs[0].value,
-          });
           history.push('login');
         })
         .catch((err) => {
@@ -55,7 +48,7 @@ const CreateAccount: React.FC = () => {
           setLoading(0);
         });
     },
-    [toast, history, setUser],
+    [toast, history],
   );
 
   return (

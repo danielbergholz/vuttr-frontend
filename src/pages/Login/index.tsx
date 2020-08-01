@@ -78,5 +78,3 @@ const Login: React.FC = () => {
 };
 
 export default Login;
-
-// <Form onSubmit={onHandleSubmit} loading={loading}>
