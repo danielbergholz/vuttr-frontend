@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { useToast } from '../../context/toast';
+import { useUser } from '../../context/user';
 import api from '../../services/api';
 import LoginButton from '../../components/LoginButton';
 import back from '../../assets/back.svg';
@@ -10,6 +11,8 @@ import { Container, Form, GoBack, CreateAccount } from './styles';
 const Login: React.FC = () => {
   const [loading, setLoading] = useState(0);
 
+  const history = useHistory();
+  const { setJwt, setUser } = useUser();
   const { toast } = useToast();
 
   const onHandleSubmit = useCallback(
@@ -31,9 +34,10 @@ const Login: React.FC = () => {
           password: inputs[1].value,
         })
         .then((response) => {
-          const { token } = response.data;
-          toast(token, 'success');
-          setLoading(0);
+          const { token, user } = response.data;
+          setJwt(token);
+          setUser(user);
+          history.push('app');
         })
         .catch((err) => {
           toast(
@@ -44,7 +48,7 @@ const Login: React.FC = () => {
           setLoading(0);
         });
     },
-    [toast],
+    [toast, history, setJwt, setUser],
   );
 
   return (
