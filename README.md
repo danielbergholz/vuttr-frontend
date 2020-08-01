@@ -24,8 +24,11 @@ yarn start
 yarn build
 ```
 
-<!-- ## Live version
-- The live version of the VUTTR website is hosted on https://vuttr.netlify.app -->
+## Backend repo
+- The backend codebase can be found on https://github.com/danielbergholz/vuttr-backend
+<!--
+## Live version
+- The live version of the VUTTR website is hosted on https://vuttr.netlify.app
 
-<!-- ## Tutorial
+## Tutorial
 - You can watch a tutorial of this website on YouTube -->
