@@ -55,7 +55,7 @@ const CreateAccount: React.FC = () => {
           setLoading(0);
         });
     },
-    [toast, history],
+    [toast, history, setUser],
   );
 
   return (
@@ -87,5 +87,3 @@ const CreateAccount: React.FC = () => {
 };
 
 export default CreateAccount;
-
-// <Form onSubmit={onHandleSubmit} loading={loading}>
