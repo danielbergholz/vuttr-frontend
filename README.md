@@ -26,9 +26,9 @@ yarn build
 
 ## Backend repo
 - The backend codebase can be found on https://github.com/danielbergholz/vuttr-backend
-<!--
-## Live version
-- The live version of the VUTTR website is hosted on https://vuttr.netlify.app
 
-## Tutorial
+## Live version
+- The live version of the VUTTR website is hosted on https://vuttr-frontend.netlify.app/
+
+<!-- ## Tutorial
 - You can watch a tutorial of this website on YouTube -->
