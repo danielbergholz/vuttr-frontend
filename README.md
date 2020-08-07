@@ -30,5 +30,5 @@ yarn build
 ## Live version
 - The live version of the VUTTR website is hosted on https://vuttr-frontend.netlify.app/
 
-<!-- ## Tutorial
-- You can watch a tutorial of this website on YouTube -->
+## Tutorial
+- You can watch a tutorial of this website on [YouTube](https://www.youtube.com/watch?v=vjaurPnkVK0)
